@@ -14,6 +14,13 @@ layout: default
  Your browser does not support the video tag.
 </video>
 
+<video width="1280" height="720" controls autoplay>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+ Your browser does not support the video tag.
+</video>
+
+
+
 <table><thead><tr><td align="center"><b>Ground</b><br><b>Truth</b></td>
 <td align="center"><b>WaveFM</b><br><b>(6 steps)</b></td>
 <td align="center"><b>WaveFM</b><br><b>(1 step)</b></td>
