@@ -9,6 +9,11 @@ layout: default
 
 <video src="audio/__2MwJ2uHu0_000004.mp4" controls width="640" height="360"></video>
 
+<video width="1280" height="720" controls autoplay muted loop>
+<source src="audio/__2MwJ2uHu0_000004.mp4" type="video/mp4">
+ Your browser does not support the video tag.
+</video>
+
 <table><thead><tr><td align="center"><b>Ground</b><br><b>Truth</b></td>
 <td align="center"><b>WaveFM</b><br><b>(6 steps)</b></td>
 <td align="center"><b>WaveFM</b><br><b>(1 step)</b></td>
