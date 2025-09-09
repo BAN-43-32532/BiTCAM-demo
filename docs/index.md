@@ -18,8 +18,8 @@ layout: default
 <td align="center"><b>FastDiff</b><br><b>(6 steps)</b></td></tr></thead><tbody>
 <tbody><tr><td colspan="9">MUSDB18-HQ Mixture 1</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Actions_-_South_Of_The_Water.wav"></audio></td>
-<td align="center"><video id="player" controls preload="auto"><source src="asset\__2MwJ2uHu0_000004.mp4"></video></td>
-<td align="center"><audio id="player" controls style="width:100px;" preload="auto"><source src="asset\1188_133604_000018_000000.wav"></audio></td>
+<td align="center"><video id="player" controls preload="auto"><source src="audio\__2MwJ2uHu0_000004.mp4"></video></td>
+<td align="center"><audio id="player" controls style="width:100px;" preload="auto"><source src="audio\1188_133604_000018_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\Actions_-_South_Of_The_Water.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Actions_-_South_Of_The_Water.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Actions_-_South_Of_The_Water.wav"></audio></td>
