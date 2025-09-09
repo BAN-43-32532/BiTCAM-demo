@@ -3,7 +3,7 @@ layout: default
 ---
 
 <video width="640" height="360" controls>
-    <source src="/asset/__2MwJ2uHu0_000004.mp4" type="video/mp4">
+    <source src="audio/__2MwJ2uHu0_000004.mp4" type="video/mp4">
     Your browser does not support the video tag.
 </video>
 
