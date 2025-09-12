@@ -56,7 +56,7 @@ Triangular, Linear: omitted
 
 Take $w_v(t,\mathrm{MSE_\mathrm{Loss}})=\dfrac{1}{\vert b_2^\prime(t,t)\vert (\mathrm{MSE_\mathrm{Loss}}+\epsilon)^p}$.
 
-The term $\lvert b_2^\prime(t,t)\rvert$ is from $f_{\theta3}^\prime(x,t,t)=a_2^\prime(t,t)x+b_2^\prime(t,t)\mathrm{NN}_\theta(x,t,s)+b_2(t,t)\mathrm{NN}_{\theta2}^\prime(x,t,s)=a_2^\prime(t,t)x+b_2^\prime(t,t)\mathrm{NN}_\theta(x,t,s)=v(x,t)$ (the partial derivative of the second variable).
+The term $\lvert b_2^\prime(t,t)\rvert$ is from $f_{\theta3}^\prime(x,t,t)=a_2^\prime(t,t)x+b_2^\prime(t,t)\mathrm{NN}_{\theta}(x,t,s)+b_2(t,t)\mathrm{NN}_{\theta2}^\prime(x,t,s)=a_2^\prime(t,t)x+b_2^\prime(t,t)\mathrm{NN}_{\theta}(x,t,s)=v(x,t)$ (the partial derivative of the second variable).
 
 Take $w_c(t,s,\mathrm{MSE_\mathrm{Loss}})=\dfrac{t-l}{\vert b(t,s)\vert (\mathrm{MSE_\mathrm{Loss}}+\epsilon)^p}$.
 
