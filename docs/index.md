@@ -24,15 +24,13 @@ layout: default
 </video>
 
 
-<table><thead><tr><td align="center"><b>Ground</b><br><b>Truth</b></td>
-<td align="center"><b>WaveFM</b><br><b>(6 steps)</b></td>
-<td align="center"><b>WaveFM</b><br><b>(1 step)</b></td>
-<td align="center"><b>BigVGAN-base</b><br><b>(1 step)</b></td>
-<td align="center"><b>PriorGrad</b><br><b>(6 steps)</b></td>
-<td align="center"><b>DiffWave</b><br><b>(6 steps)</b></td>
-<td align="center"><b>HifiGAN-V1</b><br><b>(1 step)</b></td>
-<td align="center"><b>FreGrad</b><br><b>(6 steps)</b></td>
-<td align="center"><b>FastDiff</b><br><b>(6 steps)</b></td></tr></thead><tbody>
+<table><thead><tr>
+<td align="center"><b>Ground Truth</b></td>
+<td align="center"><b>MMAudio-S-16k 25steps</b></td>
+<td align="center"><b>MMAudio-L-44k 25steps</b></td>
+<td align="center"><b>BiTCAM-S-16k 1step</b></td>
+<td align="center"><b>BiTCAM-L-16k 4steps</b></td>
+</tr></thead><tbody>
 <tbody><tr><td colspan="9">MUSDB18-HQ Mixture 1</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Actions_-_South_Of_The_Water.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">MUSDB18-HQ Mixture 6</td></tr></tbody><tbody><tr>
