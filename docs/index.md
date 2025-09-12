@@ -72,13 +72,13 @@ Triangular, Linear: omitted
 
 ---
 
-Take $w_v(t,\mathrm{MSE_\mathrm{Loss}})=\dfrac{1}{|b_2^\prime(t,t)|(\mathrm{MSE_\mathrm{Loss}}+\epsilon)^p}$.
+Take $w_v(t,\mathrm{MSE_\mathrm{Loss}})=\dfrac{1}{\vert b_2^\prime(t,t)\vert (\mathrm{MSE_\mathrm{Loss}}+\epsilon)^p}$.
 
-The term $|b_2^\prime(t,t)|$ is from $f_{\theta3}^\prime(x,t,t)=a_2^\prime(t,t)x+b_2^\prime(t,t)\mathrm{NN}_\theta(x,t,s)+b_2(t,t)\mathrm{NN}_{\theta2}^\prime(x,t,s)=a_2^\prime(t,t)x+b_2^\prime(t,t)\mathrm{NN}_\theta(x,t,s)=v(x,t)$ (the partial derivative of the second variable).
+The term $\vert b_2^\prime(t,t)\vert $ is from $f_{\theta3}^\prime(x,t,t)=a_2^\prime(t,t)x+b_2^\prime(t,t)\mathrm{NN}_\theta(x,t,s)+b_2(t,t)\mathrm{NN}_{\theta2}^\prime(x,t,s)=a_2^\prime(t,t)x+b_2^\prime(t,t)\mathrm{NN}_\theta(x,t,s)=v(x,t)$ (the partial derivative of the second variable).
 
-Take $w_c(t,s,\mathrm{MSE_\mathrm{Loss}})=\dfrac{t-l}{|b(t,s)|(\mathrm{MSE_\mathrm{Loss}}+\epsilon)^p}$.
+Take $w_c(t,s,\mathrm{MSE_\mathrm{Loss}})=\dfrac{t-l}{\vert b(t,s)\vert (\mathrm{MSE_\mathrm{Loss}}+\epsilon)^p}$.
 
-_sub iudice_: $\frac{t-l}{|b(t,s)|}$ is used to balance the gradient scale in $\frac{1}{D}\left\lVert\frac{f_\theta(x,t,s)-f_{\theta^-}(x+v(x,t)(l-t),l,s)}}{t-l}\right\rVert_2^2$
+_sub iudice_: $\frac{t-l}{\vert b(t,s)\vert }$ is used to balance the gradient scale in $\frac{1}{D}\left\lVert\frac{f_\theta(x,t,s)-f_{\theta^-}(x+v(x,t)(l-t),l,s)}}{t-l}\right\rVert_2^2$
 
 ---
 
