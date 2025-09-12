@@ -1,4 +1,4 @@
-<img width="2371" height="74" alt="image" src="https://github.com/user-attachments/assets/074d4397-5707-4135-8770-b85f4acf9f4a" />---
+---
 layout: default
 ---
 
@@ -40,7 +40,7 @@ $f_{\theta1}'(x,t,s)v(x,t)+f_{\theta2}'(x,t,s)=0$ with $f_\theta(x,t,t)=x$
 
 $f_\theta(x,t,t)=x$ gives $f_{\theta1}'(x,t,t)=\mathbf{I}$ and $f_{\theta2}'(x,t,t)=-f_{\theta3}'(x,t,t)$
 
-Thus, when $t=s$, it gives flow matching loss $f_{\theta3}'(x,t,t)=v(x,t)$
+Thus, when $t=s$, it gives flow matching loss $f'_{\theta3}(x,t,t)=v(x,t)$
 
 For general situations, the Taylor’s expansion gives us a consistency loss:
 
