@@ -16,6 +16,7 @@ section {
 }
 
 .main-content {
+  min-width: 96rem;
   max-width: 96rem;
   padding: 2rem 6rem;
   margin: 0 auto;
