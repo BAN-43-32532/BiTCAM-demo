@@ -18,38 +18,27 @@ layout: default
 | BiTCAM-L-16k<br>1step | 1.03B | 160.71 | 15.25 | 2.59 | 1.89 | 1.89 | 8.15 | 19.36 | 0.913 | - |
 | BiTCAM-L-16k<br>4steps | 1.03B | 105.66 | 7.36 | 1.46 | 1.60 | 1.58 | 12.15 | 26.05 | 0.843 | - |
 
-<video width="1280" height="720" controls autoplay>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
- Your browser does not support the video tag.
-</video>
-
-
 <table><thead><tr>
 <td align="center"><b>Ground Truth</b></td>
-<td align="center"><b>MMAudio-S-16k 25steps</b></td>
 <td align="center"><b>MMAudio-L-44k 25steps</b></td>
 <td align="center"><b>BiTCAM-S-16k 1step</b></td>
 <td align="center"><b>BiTCAM-L-16k 4steps</b></td>
 </tr></thead><tbody>
 
 <tbody><tr><td colspan="5"><b>Prompt:</b> mouse clicking</td></tr></tbody><tbody><tr>
-<video width="384" controls autoplay>
+<video width="480" controls autoplay>
 <source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
  Your browser does not support the video tag.
 </video>
-<video width="384" controls autoplay>
+<video width="480" controls autoplay>
 <source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
  Your browser does not support the video tag.
 </video>
-<video width="384" controls autoplay>
+<video width="480" controls autoplay>
 <source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
  Your browser does not support the video tag.
 </video>
-<video width="384" controls autoplay>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
- Your browser does not support the video tag.
-</video>
-<video width="384" controls autoplay>
+<video width="480" controls autoplay>
 <source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
  Your browser does not support the video tag.
 </video>
