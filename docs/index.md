@@ -26,26 +26,49 @@ Flow matching framework allows us generate data by solving ODE.
 
 $x_t=\alpha_tx_0+\beta_tx_1,~x_0\sim p_\text{data},~x_1\sim\mathcal{N}(0,I)$
 
-$\frac{\mathrm{d}}{\mathrm{d}\!t}X(t)=v(X(t),t)$, $v(x,t)=\mathbb E[\alpha_t'x_0+\beta_t'x_1\vert x_t=x]$
+$\frac{\mathrm{d}}{\mathrm{d}\!t}X(t)=v(X(t),t)$, $v(x,t)=\mathbb E[\alpha_t^\prime x_0+\beta_t^\prime x_1\vert x_t=x]$
 
 However, solving the ODE is time-consuming. We want to use a neural network directly solve the velocity ODE to realize few-step generation.
 
 We consider $f(x,t,s)$, which is the solution operator of velocity ODE; it solves the velocity ODE with initial condition $X(t)=x$ to time $s$.
 
+---
+
 To realize few-step generation, we need to use a model $f_\theta(x,t,s)$ to approximate the ground truth solution operator $f(x,t,s)$ given by flow matching velocity field.
 
 We discovered a simple and efficient learning method with equation:
 
-$f_{\theta1}'(x,t,s)v(x,t)+f_{\theta2}'(x,t,s)=0$ with $f_\theta(x,t,t)=x$
+$f_{\theta1}^\prime (x,t,s)v(x,t)+f_{\theta2}^\prime (x,t,s)=0$ with $f_\theta(x,t,t)=x$
 
-$f_\theta(x,t,t)=x$ gives $f_{\theta1}'(x,t,t)=\mathbf{I}$ and $f_{\theta2}'(x,t,t)=-f_{\theta3}'(x,t,t)$
+$f_\theta(x,t,t)=x$ gives $f_{\theta1}^\prime (x,t,t)=\mathbf{I}$ and $f_{\theta2}^\prime (x,t,t)=-f_{\theta3}^\prime (x,t,t)$
 
-Thus, when $t=s$, it gives flow matching loss $f'_{\theta3}(x,t,t)=v(x,t)$
+Thus, when $t=s$, it gives flow matching loss $f_{\theta3}^\prime (x,t,t)=v(x,t)$
 
-For general situations, the Taylor’s expansion gives us a consistency loss:
+For general situations, the Taylor's expansion gives us a consistency loss:
 
-$0=f_{\theta1}'(x,t,s)v(x,t)+f_{\theta2}'(x,t,s)=\frac{1}{t-l}[f_\theta(x,t,s)-f_\theta(x+v(x,t)(l-t),l,s)]+\mathcal{O}(t-l)$
+$0=f_{\theta1}^\prime (x,t,s)v(x,t)+f_{\theta2}^\prime (x,t,s)=\frac{1}{t-l}[f_\theta(x,t,s)-f_\theta(x+v(x,t)(l-t),l,s)]+\mathcal{O}(t-l)$
 
+---
+
+Velocity Loss: $\mathbb E_{x_t,t}\left[w_v(t,\mathrm{MSE_\mathrm{Loss}})\cdot\frac{1}{D}\left\lVert f_{\theta3}^\prime(x_t,t,t)-v(x_t,t)\right\rVert_2^2\right]$
+
+Consistency Loss: $\mathbb E_{x_t,t,s}\left[w_c(t,s,\mathrm{MSE_\mathrm{Loss}})\cdot\frac{1}{D}\left\lVert\frac{f_\theta(x,t,s)-f_{\theta^-(x+v(x,t)(l-t),l,s)}}{t-l}\right\rVert_2^2\right]$
+
+$\theta^-$ means stop gradient operation and $D$ is the data dimension.
+
+Set $l=t+(s-t)\cdot\frac{0.1}{100^{\text{cur-step}/\text{tot-step}}}$, which will get close to $t$ gradually.
+
+$w_v(t,\mathrm{MSE_\mathrm{Loss}})$ and $w_c(t,s,\mathrm{MSE_\mathrm{Loss}})$ are dynamic scale functions.
+
+---
+
+Consider $f_\theta(x,t,s)=a(t,s)x+b(t,s)\mathrm{NN}_\theta(x,t,s)$.
+
+We can parameterize the model through various ways, as long as $a(t,t)=1$ and $b(t,t)=0$ hold:
+
+Euler Solver: $f_\theta(x,t,s)=x+(s-t)\mathrm{NN}_\theta(x,t,s)$
+
+Triangular, Linear: omitted
 
 
 
