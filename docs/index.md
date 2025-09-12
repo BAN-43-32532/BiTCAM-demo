@@ -38,7 +38,7 @@ Consistency Loss: $\mathbb E_{x_t,t,s}\left[w_c(t,s,\mathrm{MSE_\mathrm{Loss}})\
 
 $\theta^-$ means stop gradient operation and $D$ is the data dimension.
 
-Set $l=t+(s-t)\cdot0.1\cdot100^{\text{cur-step}/\text{tot-step}}$, which will get close to $t$ gradually.
+Set $l=t+(s-t)\cdot0.1\cdot0.01^{\text{cur-step}/\text{tot-step}}$, which will get close to $t$ gradually.
 
 $w_v(t,\mathrm{MSE_\mathrm{Loss}})$ and $w_c(t,s,\mathrm{MSE_\mathrm{Loss}})$ are dynamic scale functions.
 
@@ -56,7 +56,7 @@ Triangular, Linear: omitted
 
 Take $w_v(t,\mathrm{MSE_\mathrm{Loss}})=\dfrac{1}{\vert b_2^\prime(t,t)\vert (\mathrm{MSE_\mathrm{Loss}}+\epsilon)^p}$.
 
-The term $\vert b_2^\prime(t,t)\vert $ is from $f_{\theta3}^\prime(x,t,t)=a_2^\prime(t,t)x+b_2^\prime(t,t)\mathrm{NN}_\theta(x,t,s)+b_2(t,t)\mathrm{NN}_{\theta2}^\prime(x,t,s)=a_2^\prime(t,t)x+b_2^\prime(t,t)\mathrm{NN}_\theta(x,t,s)=v(x,t)$ (the partial derivative of the second variable).
+The term $\lvert b_2^\prime(t,t)\rvert$ is from $f_{\theta3}^\prime(x,t,t)=a_2^\prime(t,t)x+b_2^\prime(t,t)\mathrm{NN}_\theta(x,t,s)+b_2(t,t)\mathrm{NN}_{\theta2}^\prime(x,t,s)=a_2^\prime(t,t)x+b_2^\prime(t,t)\mathrm{NN}_\theta(x,t,s)=v(x,t)$ (the partial derivative of the second variable).
 
 Take $w_c(t,s,\mathrm{MSE_\mathrm{Loss}})=\dfrac{t-l}{\vert b(t,s)\vert (\mathrm{MSE_\mathrm{Loss}}+\epsilon)^p}$.
 
