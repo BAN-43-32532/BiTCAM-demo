@@ -28,7 +28,7 @@ layout: default
 <tbody>
 <tr>
 <td colspan="4">
-<b>Prompt:</b> mouse clicking
+<span style="display:block; text-align:left;"><b>Prompt:</b> mouse clicking</span>
 <div class="video-row">
 <video controls>
 <source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
