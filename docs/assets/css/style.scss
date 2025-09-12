@@ -34,6 +34,18 @@ section {
 }
 
 .video-row video {
-  width: 20%; /* 四个视频，每个占 24%，加上 gap 大约 100% */
+  width: 24%; /* 四个视频，每个占 24%，加上 gap 大约 100% */
   height: auto;
+}
+
+.main-content table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse; /* 可选，合并边框 */
+  text-align: center; /* 表格内容居中 */
+}
+
+/* 可选：表头加粗 */
+.main-content th {
+  font-weight: bold;
 }
