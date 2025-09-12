@@ -2,6 +2,19 @@
 layout: default
 ---
 
+$\mathrm{}$
+
+IS_PANNs
+
+| Method | Params | $\mathrm{FD_{PaSST}}\downarrow$ | $\mathrm{FD_{PANNs}}\downarrow$ | $\mathrm{FD_{VGG}}\downarrow$ | $\mathrm{KL_{PANNs}}\downarrow$ | $\mathrm{KL_{PaSST}}\downarrow$ | $\mathrm{IS}\uparrow$ | $\mathrm{IB\text{-}score}\uparrow$ | $\mathrm{DeSync}\downarrow$ | $\mathrm{Time~(s)}\downarrow$ |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| MMAudio-S-16k-25steps | 157M | 70.19 | 5.22 | 0.79 | 1.65 | 1.59 | 14.44 | 29.13 | 0.483 | 1.23 |
+| MMAudio-L-44k-25steps | 1.03B | 60.60 | 4.72 | 0.97 | 1.65 | 1.40 | 17.40 | 33.22 | 0.442 | 1.96 |
+| BiTCAM-S-16k-1step
+| BiTCAM-S-16k-4steps
+| BiTCAM-L-16k-v2-1step | | 160.71 | 15.25 | 2.59 | 1.89 | 1.89 | 8.15 | 19.36 | 0.913 | |
+| BiTCAM-L-16k-v2-4steps | | 105.66 | 7.36 | 1.46 | 1.60 | 1.58 | 12.15 | 26.05 | 0.843 | |
+
 <video width="640" height="360" controls>
     <source src="audio/__2MwJ2uHu0_000004.mp4" type="video/mp4">
     Your browser does not support the video tag.
