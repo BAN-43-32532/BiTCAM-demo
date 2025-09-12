@@ -52,7 +52,7 @@ $0=f_{\theta1}^\prime (x,t,s)v(x,t)+f_{\theta2}^\prime (x,t,s)=\frac{1}{t-l}[f_\
 
 Velocity Loss: $\mathbb E_{x_t,t}\left[w_v(t,\mathrm{MSE_\mathrm{Loss}})\cdot\frac{1}{D}\left\lVert f_{\theta3}^\prime(x_t,t,t)-v(x_t,t)\right\rVert_2^2\right]$
 
-Consistency Loss: $\mathbb E_{x_t,t,s}\left[w_c(t,s,\mathrm{MSE_\mathrm{Loss}})\cdot\frac{1}{D}\left\lVert\frac{f_\theta(x,t,s)-f_{\theta^-}(x+v(x,t)(l-t),l,s)}}{t-l}\right\rVert_2^2\right]$
+Consistency Loss: $\mathbb E_{x_t,t,s}\left[w_c(t,s,\mathrm{MSE_\mathrm{Loss}})\cdot \frac{1}{D}\left\lVert\frac{f_\theta(x,t,s)-f_{\theta^-}(x+v(x,t)(l-t),l,s)}{t-l}\right\rVert_2^2\right]$
 
 $\theta^-$ means stop gradient operation and $D$ is the data dimension.
 
@@ -78,7 +78,7 @@ The term $\vert b_2^\prime(t,t)\vert $ is from $f_{\theta3}^\prime(x,t,t)=a_2^\p
 
 Take $w_c(t,s,\mathrm{MSE_\mathrm{Loss}})=\dfrac{t-l}{\vert b(t,s)\vert (\mathrm{MSE_\mathrm{Loss}}+\epsilon)^p}$.
 
-_sub iudice_: $\frac{t-l}{\vert b(t,s)\vert }$ is used to balance the gradient scale in $\frac{1}{D}\left\lVert\frac{f_\theta(x,t,s)-f_{\theta^-}(x+v(x,t)(l-t),l,s)}}{t-l}\right\rVert_2^2$
+_sub iudice_: $\frac{t-l}{\vert b(t,s)\vert }$ is used to balance the gradient scale in $\frac{1}{D}\left\lVert\frac{f_\theta(x,t,s)-f_{\theta^-}(x+v(x,t)(l-t),l,s)}{t-l}\right\rVert_2^2$
 
 ---
 
