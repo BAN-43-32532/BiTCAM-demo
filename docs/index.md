@@ -2,24 +2,6 @@
 layout: default
 ---
 
-## Experiment Results
-
-| Method | Params | $\mathrm{FD_{PaSST}}\downarrow$ | $\mathrm{FD_{PANNs}}\downarrow$ | $\mathrm{FD_{VGG}}\downarrow$ | $\mathrm{KL_{PANNs}}\downarrow$ | $\mathrm{KL_{PaSST}}\downarrow$ | $\mathrm{IS}\uparrow$ | $\mathrm{IB\text{-}score}\uparrow$ | $\mathrm{DeSync}\downarrow$ | $\mathrm{Time~(s)}\downarrow$ |
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| ReWaS | 619M | 141.38 | 17.54 | 1.79 | 2.87 | 2.82 | 8.51 | 14.82 | 1.062 | 15.97 |
-| Seeing&Hearing | 415M | 219.01 | 24.58 | 5.40 | 2.26 | 2.30 | 8.58 | 33.99 | 1.204 | 14.55 |
-| V-AURA | 695M | 218.50 | 14.80 | 2.88 | 2.42 | 2.07 | 10.08 | 27.64 | 0.654 | 16.55 |
-| VATT | - | 131.88 | 10.63 | 2.77 | 1.48 | 1.41 | 11.90 | 25.00 | 1.195 | - |
-| Frieren | 159M | 106.10 | 11.45 | 1.34 | 2.73 | 2.86 | 12.25 | 22.78 | 0.851 | - |
-| FoleyCrafter | 1.22B | 140.09 | 16.24 | 2.51 | 2.30 | 2.23 | 15.68 | 25.68 | 1.225 | 1.67 |
-| V2A-Mapper | 229M | 84.57 | 8.40 | 0.84 | 2.69 | 2.56 | 12.47 | 22.58 | 1.225 | - |
-| MMAudio-S-16k<br>25steps | 157M | 70.19 | 5.22 | 0.79 | 1.65 | 1.59 | 14.44 | 29.13 | 0.483 | 1.23 |
-| MMAudio-L-44k<br>25steps | 1.03B | 60.60 | 4.72 | 0.97 | 1.65 | 1.40 | 17.40 | 33.22 | 0.442 | 1.96 |
-| BiTCAM-S-16k<br>1step | 157M | - | - | - | - | - | - | - | - | - |
-| BiTCAM-S-16k<br>4steps | 157M | - | - | - | - | - | - | - | - | - |
-| BiTCAM-L-16k<br>1step | 1.03B | 160.71 | 15.25 | 2.59 | 1.89 | 1.89 | 8.15 | 19.36 | 0.913 | - |
-| BiTCAM-L-16k<br>4steps | 1.03B | 105.66 | 7.36 | 1.46 | 1.60 | 1.58 | 12.15 | 26.05 | 0.843 | - |
-
 ## One-Step Generation
 
 Flow matching framework allows us generate data by solving ODE.
@@ -92,6 +74,24 @@ $\phi$ is the empty label,\\
 $f_{\theta3}^\prime(x,t,t,\phi)$ is the learned unconditional velocity field.
 
 $w=1+(w_0-1)f(t)$, where $f(t)=1,t\leq t_0;1-e^{-k(1-t)/(t-t_0)},\text{otherwise}$ is a scaling function with differentiability to decrease the guidance strength for higher noise level (t is close to 1).
+
+## Experiment Results
+
+| Method | Params | $\mathrm{FD_{PaSST}}\downarrow$ | $\mathrm{FD_{PANNs}}\downarrow$ | $\mathrm{FD_{VGG}}\downarrow$ | $\mathrm{KL_{PANNs}}\downarrow$ | $\mathrm{KL_{PaSST}}\downarrow$ | $\mathrm{IS}\uparrow$ | $\mathrm{IB\text{-}score}\uparrow$ | $\mathrm{DeSync}\downarrow$ | $\mathrm{Time~(s)}\downarrow$ |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| ReWaS | 619M | 141.38 | 17.54 | 1.79 | 2.87 | 2.82 | 8.51 | 14.82 | 1.062 | 15.97 |
+| Seeing&Hearing | 415M | 219.01 | 24.58 | 5.40 | 2.26 | 2.30 | 8.58 | 33.99 | 1.204 | 14.55 |
+| V-AURA | 695M | 218.50 | 14.80 | 2.88 | 2.42 | 2.07 | 10.08 | 27.64 | 0.654 | 16.55 |
+| VATT | - | 131.88 | 10.63 | 2.77 | 1.48 | 1.41 | 11.90 | 25.00 | 1.195 | - |
+| Frieren | 159M | 106.10 | 11.45 | 1.34 | 2.73 | 2.86 | 12.25 | 22.78 | 0.851 | - |
+| FoleyCrafter | 1.22B | 140.09 | 16.24 | 2.51 | 2.30 | 2.23 | 15.68 | 25.68 | 1.225 | 1.67 |
+| V2A-Mapper | 229M | 84.57 | 8.40 | 0.84 | 2.69 | 2.56 | 12.47 | 22.58 | 1.225 | - |
+| MMAudio-S-16k<br>25steps | 157M | 70.19 | 5.22 | 0.79 | 1.65 | 1.59 | 14.44 | 29.13 | 0.483 | 1.23 |
+| MMAudio-L-44k<br>25steps | 1.03B | 60.60 | 4.72 | 0.97 | 1.65 | 1.40 | 17.40 | 33.22 | 0.442 | 1.96 |
+| BiTCAM-S-16k<br>1step | 157M | - | - | - | - | - | - | - | - | - |
+| BiTCAM-S-16k<br>4steps | 157M | - | - | - | - | - | - | - | - | - |
+| BiTCAM-L-16k<br>1step | 1.03B | 160.71 | 15.25 | 2.59 | 1.89 | 1.89 | 8.15 | 19.36 | 0.913 | - |
+| BiTCAM-L-16k<br>4steps | 1.03B | 105.66 | 7.36 | 1.46 | 1.60 | 1.58 | 12.15 | 26.05 | 0.843 | - |
 
 <table><thead><tr>
 <td align="center"><b>Ground Truth</b></td>
