@@ -16,9 +16,24 @@ section {
 }
 
 .main-content {
-  min-width: 95%;
   max-width: 95%;
   padding: 2rem 6rem;
   margin: 0 auto;
   font-size: 1.1rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+.video-row {
+  display: flex;
+  justify-content: space-between; /* 每个视频平均分布 */
+  flex-wrap: wrap; /* 多行自动换行 */
+  gap: 2%; /* 视频之间水平间距 */
+  margin-bottom: 2rem; /* 视频行和下方元素的间距 */
+}
+
+.video-row video {
+  width: 20%; /* 四个视频，每个占 24%，加上 gap 大约 100% */
+  height: auto;
 }
