@@ -26,19 +26,19 @@ layout: default
 </tr></thead><tbody>
 
 <tbody><tr><td colspan="5"><b>Prompt:</b> mouse clicking</td></tr></tbody><tbody><tr>
-<video width="480" controls autoplay>
+<video width="20%" controls>
 <source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
  Your browser does not support the video tag.
 </video>
-<video width="480" controls autoplay>
+<video width="20%" controls>
 <source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
  Your browser does not support the video tag.
 </video>
-<video width="480" controls autoplay>
+<video width="20%" controls>
 <source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
  Your browser does not support the video tag.
 </video>
-<video width="480" controls autoplay>
+<video width="20%" controls>
 <source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
  Your browser does not support the video tag.
 </video>
