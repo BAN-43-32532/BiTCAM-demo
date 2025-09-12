@@ -25,22 +25,27 @@ layout: default
 <td align="center"><b>BiTCAM-L-16k 4steps</b></td>
 </tr></thead><tbody>
 
-<tbody><tr><td colspan="4"><b>Prompt:</b> mouse clicking</td></tr></tbody><tbody><tr>
-
+<tbody>
+<tr>
+<td colspan="4">
+<b>Prompt:</b> mouse clicking
 <div class="video-row">
-  <video controls>
-    <source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-  </video>
-  <video controls>
-    <source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-  </video>
-  <video controls>
-    <source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-  </video>
-  <video controls>
-    <source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-  </video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
 </div>
+</td>
+</tr>
+</tbody>
 
 </tr></tbody><tbody><tr><td colspan="9">MUSDB18-HQ Mixture 6</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Young_Griffo_-_Facade.wav"></audio></td>
