@@ -1,4 +1,4 @@
----
+<img width="2371" height="74" alt="image" src="https://github.com/user-attachments/assets/074d4397-5707-4135-8770-b85f4acf9f4a" />---
 layout: default
 ---
 
@@ -25,6 +25,29 @@ layout: default
 Flow matching framework allows us generate data by solving ODE.
 
 $x_t=\alpha_tx_0+\beta_tx_1,~x_0\sim p_\text{data},~x_1\sim\mathcal{N}(0,I)$
+
+$\frac{\mathrm{d}}{\mathrm{d}\!t}X(t)=v(X(t),t)$, $v(x,t)=\mathbb E[\alpha_t'x_0+\beta_t'x_1\vert x_t=x]$
+
+However, solving the ODE is time-consuming. We want to use a neural network directly solve the velocity ODE to realize few-step generation.
+
+We consider $f(x,t,s)$, which is the solution operator of velocity ODE; it solves the velocity ODE with initial condition $X(t)=x$ to time $s$.
+
+To realize few-step generation, we need to use a model $f_\theta(x,t,s)$ to approximate the ground truth solution operator $f(x,t,s)$ given by flow matching velocity field.
+
+We discovered a simple and efficient learning method with equation:
+
+$f_{\theta1}'(x,t,s)v(x,t)+f_{\theta2}'(x,t,s)=0$ with $f_\theta(x,t,t)=x$
+
+$f_\theta(x,t,t)=x$ gives $f_{\theta1}'(x,t,t)=\mathbf{I}$ and $f_{\theta2}'(x,t,t)=-f_{\theta3}'(x,t,t)$
+
+Thus, when $t=s$, it gives flow matching loss $f_{\theta3}'(x,t,t)=v(x,t)$
+
+For general situations, the Taylor’s expansion gives us a consistency loss:
+
+$0=f_{\theta1}'(x,t,s)v(x,t)+f_{\theta2}'(x,t,s)=\frac{1}{t-l}[f_\theta(x,t,s)-f_\theta(x+v(x,t)(l-t),l,s)]+\mathcal{O}(t-l)$
+
+
+
 
 <table><thead><tr>
 <td align="center"><b>Ground Truth</b></td>
