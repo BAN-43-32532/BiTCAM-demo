@@ -18,23 +18,10 @@ layout: default
 | BiTCAM-L-16k<br>1step | 1.03B | 160.71 | 15.25 | 2.59 | 1.89 | 1.89 | 8.15 | 19.36 | 0.913 | - |
 | BiTCAM-L-16k<br>4steps | 1.03B | 105.66 | 7.36 | 1.46 | 1.60 | 1.58 | 12.15 | 26.05 | 0.843 | - |
 
-<video width="640" height="360" controls>
-    <source src="audio/__2MwJ2uHu0_000004.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
-
-<video src="audio/__2MwJ2uHu0_000004.mp4" controls width="640" height="360"></video>
-
-<video width="1280" height="720" controls autoplay muted loop>
-<source src="audio/__2MwJ2uHu0_000004.mp4" type="video/mp4">
- Your browser does not support the video tag.
-</video>
-
 <video width="1280" height="720" controls autoplay>
 <source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
  Your browser does not support the video tag.
 </video>
-
 
 
 <table><thead><tr><td align="center"><b>Ground</b><br><b>Truth</b></td>
@@ -48,14 +35,6 @@ layout: default
 <td align="center"><b>FastDiff</b><br><b>(6 steps)</b></td></tr></thead><tbody>
 <tbody><tr><td colspan="9">MUSDB18-HQ Mixture 1</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Actions_-_South_Of_The_Water.wav"></audio></td>
-<td align="center"><video id="player" controls preload="auto"><source src="audio\__2MwJ2uHu0_000004.mp4"></video></td>
-<td align="center"><audio id="player" controls style="width:100px;" preload="auto"><source src="audio\1188_133604_000018_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\Actions_-_South_Of_The_Water.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\Actions_-_South_Of_The_Water.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\Actions_-_South_Of_The_Water.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\Actions_-_South_Of_The_Water.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\Actions_-_South_Of_The_Water.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\Actions_-_South_Of_The_Water.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">MUSDB18-HQ Mixture 6</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Young_Griffo_-_Facade.wav"></audio></td>
 </tr></tbody><tbody><tr><td colspan="9">MUSDB18-HQ Bass 1</td></tr></tbody><tbody><tr>
@@ -84,13 +63,6 @@ layout: default
 </tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 6</td></tr></tbody><tbody><tr>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\3538_163624_000015_000000.wav"></audio></td>
 <td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\3538_163624_000015_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(1_step)\3538_163624_000015_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\BigVGAN-base_(1_step)\3538_163624_000015_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\PriorGrad_(6_steps)\3538_163624_000015_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\DiffWave_(6_steps)\3538_163624_000015_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\HifiGAN-V1_(1_step)\3538_163624_000015_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FreGrad_(6_steps)\3538_163624_000015_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\FastDiff_(6_steps)\3538_163624_000015_000000.wav"></audio></td>
 </tr></tbody>
 
 {% raw %}
