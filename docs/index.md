@@ -25,9 +25,7 @@ layout: default
 <td align="center"><b>BiTCAM-L-16k 4steps</b></td>
 </tr></thead><tbody>
 
-<tbody>
-<tr>
-<td colspan="4">
+<tbody><tr><td colspan="4">
 <span style="display:block; text-align:left;"><b>Prompt:</b> mouse clicking</span>
 <div class="video-row">
 <video controls>
@@ -43,39 +41,7 @@ layout: default
 <source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
 </video>
 </div>
-</td>
-</tr>
-</tbody>
-
-</tr></tbody><tbody><tr><td colspan="9">MUSDB18-HQ Mixture 6</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Young_Griffo_-_Facade.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">MUSDB18-HQ Bass 1</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Actions_-_Devil's_Words.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">MUSDB18-HQ Drum 1</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Leaf_-_Summerghost.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">MUSDB18-HQ Vocal 1</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Flags_-_54.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">MUSDB18-HQ Vocal 2</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\The_Wrong'Uns_-_Rothko.wav"></audio></td>
-
-</tr></tbody><tbody><tr><td colspan="9">MUSDB18-HQ Vocal 3</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Bill_Chudziak_-_Children_Of_No-one.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">MUSDB18-HQ Others 1</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\Fergessen_-_Nos_Palpitants.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 1</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\84_121123_000015_000000.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 2</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\174_168635_000024_000001.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 3</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\1188_133604_000018_000000.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 4</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\1272_135031_000054_000000.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 5</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\2277_149896_000023_000001.wav"></audio></td>
-</tr></tbody><tbody><tr><td colspan="9">LibriTTS Test 6</td></tr></tbody><tbody><tr>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\Ground_Truth\3538_163624_000015_000000.wav"></audio></td>
-<td align="center"><audio id="player" controls="" style="width:100px;" preload="auto"><source src="audio\WaveFM_(6_steps)\3538_163624_000015_000000.wav"></audio></td>
-</tr></tbody>
+</td></tr></tbody>
 
 {% raw %}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
