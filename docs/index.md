@@ -26,6 +26,132 @@ layout: default
 </tr></thead><tbody>
 
 <tbody><tr><td colspan="4">
+<span style="display:block; text-align:left;"><b>Prompt:</b> child speech, kid speaking</span>
+<div class="video-row">
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_L_16k/0B4dYTMsgHA_000130.mp4" type="video/mp4">
+</video>
+</div>
+</td></tr></tbody>
+
+<tbody><tr><td colspan="4">
+<span style="display:block; text-align:left;"><b>Prompt:</b> whale calling</span>
+<div class="video-row">
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_L_16k/F8Zt3mYlOqU_000094.mp4" type="video/mp4">
+</video>
+</div>
+</td></tr></tbody>
+
+<tbody><tr><td colspan="4">
+<span style="display:block; text-align:left;"><b>Prompt:</b> lions growling</span>
+<div class="video-row">
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_L_16k/__-8wVOYH3c_000140.mp4" type="video/mp4">
+</video>
+</div>
+</td></tr></tbody>
+
+<tbody><tr><td colspan="4">
+<span style="display:block; text-align:left;"><b>Prompt:</b> waterfall burbling</span>
+<div class="video-row">
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_L_16k/--0PQM4-hqg_000030.mp4" type="video/mp4">
+</video>
+</div>
+</td></tr></tbody>
+
+<tbody><tr><td colspan="4">
+<span style="display:block; text-align:left;"><b>Prompt:</b> child singing</span>
+<div class="video-row">
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_L_16k/0lPdVM01xXw_000030.mp4" type="video/mp4">
+</video>
+</div>
+</td></tr></tbody>
+
+<tbody><tr><td colspan="4">
+<span style="display:block; text-align:left;"><b>Prompt:</b> ice cracking</span>
+<div class="video-row">
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_L_16k/L_Od6fcPQ4Q_000007.mp4" type="video/mp4">
+</video>
+</div>
+</td></tr></tbody>
+
+<tbody><tr><td colspan="4">
+<span style="display:block; text-align:left;"><b>Prompt:</b> raining</span>
+<div class="video-row">
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_L_16k/1XO0SqsZhHU_000030.mp4" type="video/mp4">
+</video>
+</div>
+</td></tr></tbody>
+
+<tbody><tr><td colspan="4">
 <span style="display:block; text-align:left;"><b>Prompt:</b> mouse clicking</span>
 <div class="video-row">
 <video controls>
@@ -38,7 +164,7 @@ layout: default
 <source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
 </video>
 <video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+<source src="video/BiTCAM_L_16k/TOUHOWRpQYA_000230.mp4" type="video/mp4">
 </video>
 </div>
 </td></tr></tbody>
