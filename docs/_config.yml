@@ -1,9 +1,5 @@
-title: Bi-Time Consistency Audio Model
-description:
+title: BiTCAM
+description: Bi-Time Consistency Audio Model
 show_downloads: false
-google_analytics:
 theme: jekyll-theme-cayman
 markdown: kramdown
-
-include:
-  - assets/css/custom.css
