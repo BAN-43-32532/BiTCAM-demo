@@ -2,6 +2,151 @@
 layout: default
 ---
 
+<table><thead><tr>
+<td align="center"><b>Ground Truth</b></td>
+<td align="center"><b>BiTCAM-L-16k 4steps</b></td>
+<td align="center"><b>BiTCAM-S-16k 1step</b></td>
+<td align="center"><b>MMAudio-L-44k 25steps</b></td>
+</tr></thead><tbody>
+
+<tbody><tr><td colspan="4">
+<span style="display:block; text-align:left;"><b>Prompt:</b> child speech, kid speaking</span>
+<div class="video-row">
+<video controls>
+<source src="video/gt/0B4dYTMsgHA_000130.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_L_16k/0B4dYTMsgHA_000130.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_S_16k/0B4dYTMsgHA_000130.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/MMAudio_L_44k/0B4dYTMsgHA_000130.mp4" type="video/mp4">
+</video>
+</div>
+</td></tr></tbody>
+<tbody><tr><td colspan="4">
+<span style="display:block; text-align:left;"><b>Prompt:</b> whale calling</span>
+<div class="video-row">
+<video controls>
+<source src="video/gt/F8Zt3mYlOqU_000094.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_L_16k/F8Zt3mYlOqU_000094.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_S_16k/F8Zt3mYlOqU_000094.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/MMAudio_L_44k/F8Zt3mYlOqU_000094.mp4" type="video/mp4">
+</video>
+</div>
+</td></tr></tbody>
+<tbody><tr><td colspan="4">
+<span style="display:block; text-align:left;"><b>Prompt:</b> playing marimba, xylophone</span>
+<div class="video-row">
+<video controls>
+<source src="video/gt/-WIDMrHskbI_000350.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_L_16k/-WIDMrHskbI_000350.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_S_16k/-WIDMrHskbI_000350.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/MMAudio_L_44k/-WIDMrHskbI_000350.mp4" type="video/mp4">
+</video>
+</div>
+</td></tr></tbody>
+<tbody><tr><td colspan="4">
+<span style="display:block; text-align:left;"><b>Prompt:</b> shot football</span>
+<div class="video-row">
+<video controls>
+<source src="video/gt/0mkj5A9qg9A_000086.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_L_16k/0mkj5A9qg9A_000086.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_S_16k/0mkj5A9qg9A_000086.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/MMAudio_L_44k/0mkj5A9qg9A_000086.mp4" type="video/mp4">
+</video>
+</div>
+</td></tr></tbody>
+<tbody><tr><td colspan="4">
+<span style="display:block; text-align:left;"><b>Prompt:</b> people eating noodle</span>
+<div class="video-row">
+<video controls>
+<source src="video/gt/0n-Z2AQCRnU_000385.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_L_16k/0n-Z2AQCRnU_000385.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_S_16k/0n-Z2AQCRnU_000385.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/MMAudio_L_44k/0n-Z2AQCRnU_000385.mp4" type="video/mp4">
+</video>
+</div>
+</td></tr></tbody>
+<tbody><tr><td colspan="4">
+<span style="display:block; text-align:left;"><b>Prompt:</b> helicopter</span>
+<div class="video-row">
+<video controls>
+<source src="video/gt/edObQJBoSPU_000060.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_L_16k/edObQJBoSPU_000060.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_S_16k/edObQJBoSPU_000060.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/MMAudio_L_44k/edObQJBoSPU_000060.mp4" type="video/mp4">
+</video>
+</div>
+</td></tr></tbody>
+<tbody><tr><td colspan="4">
+<span style="display:block; text-align:left;"><b>Prompt:</b> raining</span>
+<div class="video-row">
+<video controls>
+<source src="video/gt/1XO0SqsZhHU_000030.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_L_16k/1XO0SqsZhHU_000030.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_S_16k/1XO0SqsZhHU_000030.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/MMAudio_L_44k/1XO0SqsZhHU_000030.mp4" type="video/mp4">
+</video>
+</div>
+</td></tr></tbody>
+<tbody><tr><td colspan="4">
+<span style="display:block; text-align:left;"><b>Prompt:</b> mouse clicking</span>
+<div class="video-row">
+<video controls>
+<source src="video/gt/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_L_16k/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/BiTCAM_S_16k/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+<video controls>
+<source src="video/MMAudio_L_44k/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+</video>
+</div>
+</td></tr></tbody>
+
+
 | Method | Params | $\mathrm{FD_{PaSST}}\downarrow$ | $\mathrm{FD_{PANNs}}\downarrow$ | $\mathrm{FD_{VGG}}\downarrow$ | $\mathrm{KL_{PANNs}}\downarrow$ | $\mathrm{KL_{PaSST}}\downarrow$ | $\mathrm{IS}\uparrow$ | $\mathrm{IB\text{-}score}\uparrow$ | $\mathrm{DeSync}\downarrow$ | $\mathrm{Time~(s)}\downarrow$ |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | ReWaS | 619M | 141.38 | 17.54 | 1.79 | 2.87 | 2.82 | 8.51 | 14.82 | 1.062 | 15.97 |
@@ -17,157 +162,6 @@ layout: default
 | BiTCAM-S-16k<br>4steps | 157M | - | - | - | - | - | - | - | - | - |
 | BiTCAM-L-16k<br>1step | 1.03B | 160.71 | 15.25 | 2.59 | 1.89 | 1.89 | 8.15 | 19.36 | 0.913 | - |
 | BiTCAM-L-16k<br>4steps | 1.03B | 105.66 | 7.36 | 1.46 | 1.60 | 1.58 | 12.15 | 26.05 | 0.843 | - |
-
-<table><thead><tr>
-<td align="center"><b>Ground Truth</b></td>
-<td align="center"><b>MMAudio-L-44k 25steps</b></td>
-<td align="center"><b>BiTCAM-S-16k 1step</b></td>
-<td align="center"><b>BiTCAM-L-16k 4steps</b></td>
-</tr></thead><tbody>
-
-<tbody><tr><td colspan="4">
-<span style="display:block; text-align:left;"><b>Prompt:</b> child speech, kid speaking</span>
-<div class="video-row">
-<video controls>
-<source src="video/gt/0B4dYTMsgHA_000130.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/BiTCAM_L_16k/0B4dYTMsgHA_000130.mp4" type="video/mp4">
-</video>
-</div>
-</td></tr></tbody>
-
-<tbody><tr><td colspan="4">
-<span style="display:block; text-align:left;"><b>Prompt:</b> whale calling</span>
-<div class="video-row">
-<video controls>
-<source src="video/gt/F8Zt3mYlOqU_000094.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/BiTCAM_L_16k/F8Zt3mYlOqU_000094.mp4" type="video/mp4">
-</video>
-</div>
-</td></tr></tbody>
-
-<tbody><tr><td colspan="4">
-<span style="display:block; text-align:left;"><b>Prompt:</b> lions growling</span>
-<div class="video-row">
-<video controls>
-<source src="video/gt/__-8wVOYH3c_000140.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/BiTCAM_L_16k/__-8wVOYH3c_000140.mp4" type="video/mp4">
-</video>
-</div>
-</td></tr></tbody>
-
-<tbody><tr><td colspan="4">
-<span style="display:block; text-align:left;"><b>Prompt:</b> waterfall burbling</span>
-<div class="video-row">
-<video controls>
-<source src="video/gt/--0PQM4-hqg_000030.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/BiTCAM_L_16k/--0PQM4-hqg_000030.mp4" type="video/mp4">
-</video>
-</div>
-</td></tr></tbody>
-
-<tbody><tr><td colspan="4">
-<span style="display:block; text-align:left;"><b>Prompt:</b> child singing</span>
-<div class="video-row">
-<video controls>
-<source src="video/gt/0lPdVM01xXw_000030.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/BiTCAM_L_16k/0lPdVM01xXw_000030.mp4" type="video/mp4">
-</video>
-</div>
-</td></tr></tbody>
-
-<tbody><tr><td colspan="4">
-<span style="display:block; text-align:left;"><b>Prompt:</b> ice cracking</span>
-<div class="video-row">
-<video controls>
-<source src="video/gt/L_Od6fcPQ4Q_000007.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/BiTCAM_L_16k/L_Od6fcPQ4Q_000007.mp4" type="video/mp4">
-</video>
-</div>
-</td></tr></tbody>
-
-<tbody><tr><td colspan="4">
-<span style="display:block; text-align:left;"><b>Prompt:</b> raining</span>
-<div class="video-row">
-<video controls>
-<source src="video/gt/1XO0SqsZhHU_000030.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/BiTCAM_L_16k/1XO0SqsZhHU_000030.mp4" type="video/mp4">
-</video>
-</div>
-</td></tr></tbody>
-
-<tbody><tr><td colspan="4">
-<span style="display:block; text-align:left;"><b>Prompt:</b> mouse clicking</span>
-<div class="video-row">
-<video controls>
-<source src="video/gt/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-<video controls>
-<source src="video/BiTCAM_L_16k/TOUHOWRpQYA_000230.mp4" type="video/mp4">
-</video>
-</div>
-</td></tr></tbody>
 
 {% raw %}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
