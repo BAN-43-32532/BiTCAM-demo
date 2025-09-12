@@ -27,7 +27,7 @@ for row in table_data:
         "--video", video_path,
         "--prompt", prompt,
         "--no-download",
-        "--num-steps", "4",
+        "--num-steps", "1",
         "--variant", "large_16k_v2"
     ]
 

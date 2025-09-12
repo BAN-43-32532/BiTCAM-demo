@@ -21,7 +21,7 @@ layout: default
 <table><thead><tr>
 <td align="center"><b>Ground Truth</b></td>
 <td align="center"><b>BiTCAM-L-16k 4steps</b></td>
-<td align="center"><b>BiTCAM-S-16k 1step</b></td>
+<td align="center"><b>BiTCAM-L-16k 1step</b></td>
 <td align="center"><b>MMAudio-L-44k 25steps</b></td>
 </tr></thead><tbody>
 
@@ -35,7 +35,7 @@ layout: default
 <source src="video/BiTCAM_L_16k/0B4dYTMsgHA_000130.mp4" type="video/mp4">
 </video>
 <video controls>
-<source src="video/BiTCAM_S_16k/0B4dYTMsgHA_000130.mp4" type="video/mp4">
+<source src="video/BiTCAM_L_16k_1step/0B4dYTMsgHA_000130.mp4" type="video/mp4">
 </video>
 <video controls>
 <source src="video/MMAudio_L_44k/0B4dYTMsgHA_000130.mp4" type="video/mp4">
@@ -52,7 +52,7 @@ layout: default
 <source src="video/BiTCAM_L_16k/F8Zt3mYlOqU_000094.mp4" type="video/mp4">
 </video>
 <video controls>
-<source src="video/BiTCAM_S_16k/F8Zt3mYlOqU_000094.mp4" type="video/mp4">
+<source src="video/BiTCAM_L_16k_1step/F8Zt3mYlOqU_000094.mp4" type="video/mp4">
 </video>
 <video controls>
 <source src="video/MMAudio_L_44k/F8Zt3mYlOqU_000094.mp4" type="video/mp4">
@@ -69,7 +69,7 @@ layout: default
 <source src="video/BiTCAM_L_16k/-WIDMrHskbI_000350.mp4" type="video/mp4">
 </video>
 <video controls>
-<source src="video/BiTCAM_S_16k/-WIDMrHskbI_000350.mp4" type="video/mp4">
+<source src="video/BiTCAM_L_16k_1step/-WIDMrHskbI_000350.mp4" type="video/mp4">
 </video>
 <video controls>
 <source src="video/MMAudio_L_44k/-WIDMrHskbI_000350.mp4" type="video/mp4">
@@ -86,7 +86,7 @@ layout: default
 <source src="video/BiTCAM_L_16k/0mkj5A9qg9A_000086.mp4" type="video/mp4">
 </video>
 <video controls>
-<source src="video/BiTCAM_S_16k/0mkj5A9qg9A_000086.mp4" type="video/mp4">
+<source src="video/BiTCAM_L_16k_1step/0mkj5A9qg9A_000086.mp4" type="video/mp4">
 </video>
 <video controls>
 <source src="video/MMAudio_L_44k/0mkj5A9qg9A_000086.mp4" type="video/mp4">
@@ -103,7 +103,7 @@ layout: default
 <source src="video/BiTCAM_L_16k/0n-Z2AQCRnU_000385.mp4" type="video/mp4">
 </video>
 <video controls>
-<source src="video/BiTCAM_S_16k/0n-Z2AQCRnU_000385.mp4" type="video/mp4">
+<source src="video/BiTCAM_L_16k_1step/0n-Z2AQCRnU_000385.mp4" type="video/mp4">
 </video>
 <video controls>
 <source src="video/MMAudio_L_44k/0n-Z2AQCRnU_000385.mp4" type="video/mp4">
@@ -120,7 +120,7 @@ layout: default
 <source src="video/BiTCAM_L_16k/edObQJBoSPU_000060.mp4" type="video/mp4">
 </video>
 <video controls>
-<source src="video/BiTCAM_S_16k/edObQJBoSPU_000060.mp4" type="video/mp4">
+<source src="video/BiTCAM_L_16k_1step/edObQJBoSPU_000060.mp4" type="video/mp4">
 </video>
 <video controls>
 <source src="video/MMAudio_L_44k/edObQJBoSPU_000060.mp4" type="video/mp4">
@@ -137,7 +137,7 @@ layout: default
 <source src="video/BiTCAM_L_16k/1XO0SqsZhHU_000030.mp4" type="video/mp4">
 </video>
 <video controls>
-<source src="video/BiTCAM_S_16k/1XO0SqsZhHU_000030.mp4" type="video/mp4">
+<source src="video/BiTCAM_L_16k_1step/1XO0SqsZhHU_000030.mp4" type="video/mp4">
 </video>
 <video controls>
 <source src="video/MMAudio_L_44k/1XO0SqsZhHU_000030.mp4" type="video/mp4">
@@ -154,7 +154,7 @@ layout: default
 <source src="video/BiTCAM_L_16k/TOUHOWRpQYA_000230.mp4" type="video/mp4">
 </video>
 <video controls>
-<source src="video/BiTCAM_S_16k/TOUHOWRpQYA_000230.mp4" type="video/mp4">
+<source src="video/BiTCAM_L_16k_1step/TOUHOWRpQYA_000230.mp4" type="video/mp4">
 </video>
 <video controls>
 <source src="video/MMAudio_L_44k/TOUHOWRpQYA_000230.mp4" type="video/mp4">
