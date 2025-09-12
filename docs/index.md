@@ -52,11 +52,11 @@ $0=f_{\theta1}^\prime (x,t,s)v(x,t)+f_{\theta2}^\prime (x,t,s)=\frac{1}{t-l}[f_\
 
 Velocity Loss: $\mathbb E_{x_t,t}\left[w_v(t,\mathrm{MSE_\mathrm{Loss}})\cdot\frac{1}{D}\left\lVert f_{\theta3}^\prime(x_t,t,t)-v(x_t,t)\right\rVert_2^2\right]$
 
-Consistency Loss: $\mathbb E_{x_t,t,s}\left[w_c(t,s,\mathrm{MSE_\mathrm{Loss}})\cdot\frac{1}{D}\left\lVert\frac{f_\theta(x,t,s)-f_{\theta^-(x+v(x,t)(l-t),l,s)}}{t-l}\right\rVert_2^2\right]$
+Consistency Loss: $\mathbb E_{x_t,t,s}\left[w_c(t,s,\mathrm{MSE_\mathrm{Loss}})\cdot\frac{1}{D}\left\lVert\frac{f_\theta(x,t,s)-f_{\theta^-}(x+v(x,t)(l-t),l,s)}}{t-l}\right\rVert_2^2\right]$
 
 $\theta^-$ means stop gradient operation and $D$ is the data dimension.
 
-Set $l=t+(s-t)\cdot\frac{0.1}{100^{\text{cur-step}/\text{tot-step}}}$, which will get close to $t$ gradually.
+Set $l=t+(s-t)\cdot0.1\cdot100^{\text{cur-step}/\text{tot-step}}$, which will get close to $t$ gradually.
 
 $w_v(t,\mathrm{MSE_\mathrm{Loss}})$ and $w_c(t,s,\mathrm{MSE_\mathrm{Loss}})$ are dynamic scale functions.
 
@@ -70,7 +70,28 @@ Euler Solver: $f_\theta(x,t,s)=x+(s-t)\mathrm{NN}_\theta(x,t,s)$
 
 Triangular, Linear: omitted
 
+---
 
+Take $w_v(t,\mathrm{MSE_\mathrm{Loss}})=\dfrac{1}{|b_2^\prime(t,t)|(\mathrm{MSE_\mathrm{Loss}}+\epsilon)^p}$.
+
+The term $|b_2^\prime(t,t)|$ is from $f_{\theta3}^\prime(x,t,t)=a_2^\prime(t,t)x+b_2^\prime(t,t)\mathrm{NN}_\theta(x,t,s)+b_2(t,t)\mathrm{NN}_{\theta2}^\prime(x,t,s)=a_2^\prime(t,t)x+b_2^\prime(t,t)\mathrm{NN}_\theta(x,t,s)=v(x,t)$ (the partial derivative of the second variable).
+
+Take $w_c(t,s,\mathrm{MSE_\mathrm{Loss}})=\dfrac{t-l}{|b(t,s)|(\mathrm{MSE_\mathrm{Loss}}+\epsilon)^p}$.
+
+_sub iudice_: $\frac{t-l}{|b(t,s)|}$ is used to balance the gradient scale in $\frac{1}{D}\left\lVert\frac{f_\theta(x,t,s)-f_{\theta^-}(x+v(x,t)(l-t),l,s)}}{t-l}\right\rVert_2^2$
+
+---
+
+Our model is also compatible with Classifier-Free Guidance:
+
+We only need to replace the sample-based class-conditioned velocity $v_c(x,t)$ with the following guidance velocity field: $v_g(x,t)=m(v_c(x,t)+(w-1)(v_c(x,t)-f_{\theta3}^\prime(x,t,t,\phi)))+(1-m)f_{\theta3}^\prime(x,t,t,c)$, where
+
+$m\in(0,1]$ is the mix ratio of guidance field and learned guidance field (could reduce target variance),\\
+$w\geq 1$ is the guidance strength,\\
+$\phi$ is the empty label,\\
+$f_{\theta3}^\prime(x,t,t,\phi)$ is the learned unconditional velocity field.
+
+$w=1+(w_0-1)f(t)$, where $f(t)=1,t\leq t_0;1-e^{-k(1-t)/(t-t_0)},\text{otherwise}$ is a scaling function with differentiability to decrease the guidance strength for higher noise level (t is close to 1).
 
 <table><thead><tr>
 <td align="center"><b>Ground Truth</b></td>
