@@ -2,8 +2,6 @@
 layout: default
 ---
 
-<link rel="stylesheet" href="/assets/css/custom.css">
-
 $\mathrm{}$
 
 IS_PANNs
